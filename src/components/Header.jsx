@@ -46,7 +46,7 @@ export function Header({ currentView, onNavigate, theme, onToggleTheme }) {
 
         <div className="brand">
           <span className="logo" aria-hidden="true">🏦</span>
-          <span className="brand-text">FBLA Banking &amp; Financial Systems</span>
+          <span className="brand-text">Set Study</span>
         </div>
 
         <button
