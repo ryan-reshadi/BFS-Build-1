@@ -834,6 +834,7 @@ input:focus {
   padding: 0;
   border: none;
   background: transparent;
+  color: var(--text);
   cursor: pointer;
   font-family: inherit;
 }
@@ -864,6 +865,7 @@ input:focus {
   border-radius: var(--radius);
   box-shadow: var(--shadow-lg);
   backface-visibility: hidden;
+  color: var(--text);
   font-size: 1.1rem;
   overflow-y: auto;
 }
@@ -877,9 +879,11 @@ input:focus {
   margin-bottom: 0.75rem;
 }
 
-.flashcard-face p {
+.flashcard-face p,
+.flashcard-face div {
   margin: 0;
   max-width: 90%;
+  color: inherit;
 }
 
 .flash-controls {
