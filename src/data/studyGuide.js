@@ -901,29 +901,4 @@ const STUDY_GUIDE = [
   }
 ];
 
-/* ============================================================
-   HELPERS
-   ============================================================ */
-
-/* Return a study-guide section by its id (used for cross-linking
-   from questions via question.studyGuideReference). */
-function getStudyGuideSection(id) {
-  return STUDY_GUIDE.find(function (s) { return s.id === id; }) || null;
-}
-
-/* Group sections by category for sidebar rendering. */
-function getStudyGuideByCategory() {
-  const grouped = {};
-  STUDY_GUIDE.forEach(function (s) {
-    if (!grouped[s.category]) grouped[s.category] = [];
-    grouped[s.category].push(s);
-  });
-  return grouped;
-}
-
-/* Expose globally for non-module offline use */
-if (typeof window !== "undefined") {
-  window.STUDY_GUIDE = STUDY_GUIDE;
-  window.getStudyGuideSection = getStudyGuideSection;
-  window.getStudyGuideByCategory = getStudyGuideByCategory;
-}
+export { STUDY_GUIDE };

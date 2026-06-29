@@ -2972,5 +2972,4 @@ const QUESTIONS = [
        ============================================================ */
 ];
 
-/* Expose globally for non-module offline use */
-if (typeof window !== "undefined") window.QUESTIONS = QUESTIONS;
+export { QUESTIONS };
